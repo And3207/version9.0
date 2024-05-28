@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones en el mismo HTML</title>
+</head>
+<body>
+    <button onclick="mostrarApartado()">Mostrar Apartado</button>
+    <div id="apartado" style="display: none;">
+        <!-- Contenido del apartado oculto -->
+        <h2>Este es el apartado oculto</h2>
+        <p>Este contenido se mostrará cuando hagas clic en el botón</p>
+    </div>
+
+    <script>
+        function mostrarApartado() {
+            var apartado = document.getElementById("apartado");
+            apartado.style.display = "block";
+        }
+    </script>
+</body>
+</html>
